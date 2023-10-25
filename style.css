@@ -1,44 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
 * {
     font-family: 'Inter', sans-serif;
     color: #fff;
 }
 
-.container {
-    max-width: 1440px;
-    display: flex;
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     background-color: #303030;
-    border-bottom: 1px solid #BABABA;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    width: 100%;
 }
 
 .menu {
-    font-size: 25px;
-    font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 30px;
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .menu-list {
-    list-style: none;
     display: flex;
+    align-items: center;
     gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .menu-item a {
     text-decoration: none;
 }
 
+.menu-item a:hover {
+    color: #ccc;
+}
+
 .login {
     display: flex;
     align-items: center;
+    justify-content: end;
+    width: 100%;
 }
 
-.login-btn {
+#login-btn {
     width: 80px;
     height: 39px;
     background: #0C70F2;
@@ -46,4 +67,33 @@
     border: none; 
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+#section-form {
+    border-top: 1px solid #BABABA;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;
+
+}
+
+#section-title {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+
+.section-text {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+mark {
+    background-color: #000;
+}
+
+form {
+    vertical-align: middle;
 }
