@@ -1,18 +1,26 @@
+/* Importação fonte */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+:root {
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+}
 
+/* Padrão para toda a página */
 * {
     font-family: 'Inter', sans-serif;
     color: #fff;
 }
 
+/* Zerando margin e padding */
 body {
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +70,7 @@ body {
 #login-btn {
     width: 80px;
     height: 39px;
-    background: #0C70F2;
+    background: var(--azul-dnc);
     box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);
     border: none; 
     font-size: 20px;
@@ -71,9 +79,12 @@ body {
 }
 
 #section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-top: 1px solid #BABABA;
-    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;
-
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), var(--preto-dnc);
+    background-repeat: no-repeat;
 }
 
 #section-title {
@@ -82,6 +93,7 @@ body {
     font-weight: 800;
     line-height: normal;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .section-text {
@@ -92,8 +104,36 @@ body {
 
 mark {
     background-color: #000;
+    font-weight: bold;
 }
 
 form {
     vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+input[type="text"], input[type="email"] {
+    max-width: 630px;
+    height: 56px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.interest-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-form {
+    background-color: var(--azul-dnc);
+    max-width: 630px;
+    height: 56px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
 }
